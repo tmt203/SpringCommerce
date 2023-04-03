@@ -30,4 +30,15 @@ public class ImageUpload {
         }
         return isUploaded;
     }
+
+    public boolean isExistedImage(MultipartFile productImage) {
+        boolean isExisted = false;
+        try {
+            File file = new File(UPLOAD_FOLDER + "\\" + productImage.getOriginalFilename());
+            isExisted = file.exists();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return isExisted;
+    }
 }

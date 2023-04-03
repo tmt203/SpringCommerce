@@ -47,6 +47,25 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    public ProductDto findById(Long id) {
+        ProductDto productDto = new ProductDto();
+        Product product = repo.findById(id).get();
+        productDto.setId(product.getId());
+        productDto.setName(product.getName());
+        productDto.setPrice(product.getPrice());
+        productDto.setBrand(product.getBrand());
+        productDto.setColor(product.getColor());
+        productDto.setCategory(product.getCategory());
+        productDto.setDescription(product.getDescription());
+        productDto.setSale(product.getSale());
+        productDto.setCurrentQuantity(product.getCurrentQuantity());
+        productDto.setImage(product.getImage());
+        productDto.setActivated(product.isActivated());
+        productDto.setDeleted(product.isDeleted());
+        return productDto;
+    }
+
+    @Override
     public Product save(MultipartFile productImage, ProductDto productDto) {
         try {
             Product product = new Product();
@@ -78,7 +97,29 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Product update(ProductDto productDto) {
+    public Product update(MultipartFile productImage, ProductDto productDto) {
+        try {
+            Product product = repo.getReferenceById(productDto.getId());
+            if (productImage == null) {
+                product.setImage(product.getImage());
+            } else {
+                if (!imageUpload.isExistedImage(productImage)) {
+                    imageUpload.uploadImage(productImage);
+                    product.setImage(Base64.getEncoder().encodeToString(productImage.getBytes()));
+                }
+            }
+            product.setName(product.getName());
+            product.setPrice(productDto.getPrice());
+            product.setBrand(productDto.getBrand());
+            product.setCategory(productDto.getCategory());
+            product.setColor(productDto.getColor());
+            product.setDescription(productDto.getDescription());
+            product.setCurrentQuantity(productDto.getCurrentQuantity());
+            product.setSale(productDto.getSale());
+            return repo.save(product);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return null;
     }
 

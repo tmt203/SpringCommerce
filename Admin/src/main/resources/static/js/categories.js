@@ -5,6 +5,7 @@ $(document).ready(() => {
 
         // Do a get request to fetch category
         let href = $(this).attr('href');
+        console.log('href:', href);
         $.get(href, function (category, status) {
             $('#updateId').val(category.id);
             $('#updateName').val(category.name);

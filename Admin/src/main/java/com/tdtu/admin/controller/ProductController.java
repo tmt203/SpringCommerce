@@ -2,6 +2,7 @@ package com.tdtu.admin.controller;
 
 import com.tdtu.library.dto.ProductDto;
 import com.tdtu.library.model.Category;
+import com.tdtu.library.model.Product;
 import com.tdtu.library.service.CategoryService;
 import com.tdtu.library.service.ProductService;
 import com.tdtu.library.service.impl.ProductServiceImpl;
@@ -64,7 +65,30 @@ public class ProductController {
     }
 
     @GetMapping("/update-product/{id}")
-    public String updateProductForm(@PathVariable("id") Long id, Model model) {
+    public String updateProductForm(@PathVariable("id") Long id, Model model, Principal principal) {
+        if (principal == null) {
+            return "redirect:/login";
+        }
+        ProductDto productDto = productService.findById(id);
+        List<Category> categories = categoryService.findAllByActivated();
+        model.addAttribute("title", "Update product");
+        model.addAttribute("productDto", productDto);
+        model.addAttribute("categories", categories);
         return "update-product";
+    }
+
+    @PostMapping("/update-product/{id}")
+    public String updateProduct(@PathVariable("id") Long id,
+                                @ModelAttribute("productDto") ProductDto productDto,
+                                @RequestParam("productImage") MultipartFile productImage,
+                                RedirectAttributes ra) {
+        try {
+            productService.update(productImage, productDto);
+            ra.addFlashAttribute("successMessage", "Update product successfully");
+        } catch (Exception e) {
+            e.printStackTrace();
+            ra.addFlashAttribute("errorMessage", "Update product failed !");
+        }
+        return "redirect:/products";
     }
 }

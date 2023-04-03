@@ -5,21 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df292812-a472-4585-a0b2-ed3c39b615b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/utils/ImageUpload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/src/main/resources/static/js/products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/update-product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/src/main/java/com/tdtu/admin/config/AdminConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/java/com/tdtu/admin/config/AdminConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/src/main/java/com/tdtu/admin/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/java/com/tdtu/admin/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/static/img/products/toyota-corolla.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/static/js/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/static/js/categories.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/templates/add-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/add-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/templates/categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/categories.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/dto/ProductDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/CategoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/CategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/utils/ImageUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/utils/ImageUpload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce-springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-springboot.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +159,9 @@
       <workItem from="1680363323956" duration="2990000" />
       <workItem from="1680392198696" duration="36135000" />
       <workItem from="1680456420050" duration="173000" />
-      <workItem from="1680481099023" duration="18883000" />
+      <workItem from="1680481099023" duration="30053000" />
+      <workItem from="1680533502586" duration="2649000" />
+      <workItem from="1680536532189" duration="9850000" />
     </task>
     <servers />
   </component>

@@ -72,7 +72,8 @@
                             <td><img th:src="*{'data:image/jpeg;base64,' + {product.image}}" src="" style="height: 40px; width: 40px"></td>
                             <td th:text="${product.description}"></td>
                             <td>
-                                <a class="btn btn-primary">Edit</a>
+                                <!-- th:href="@{update-product/{id}(id=${product.id})}" -->
+                                <a th:href="@{'update-product/' + ${product.id}}" id="updateBtn" class="btn btn-primary">Edit</a>
                                 <a class="btn btn-danger">Delete</a>
                                 <a class="btn btn-success">Enable</a>
                             </td>
@@ -112,7 +113,7 @@
     <script th:src="@{js/sb-admin-2.min.js}"></script>
 
     <!--  My script  -->
-    <script th:src="@{js/categories.js}"></script>
+
 </body>
 
 </html>

@@ -30,9 +30,8 @@ public class AdminConfiguration {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http.authorizeHttpRequests().requestMatchers("/*").permitAll()
-                .requestMatchers("/admin/*")
-                .hasAuthority("ADMIN")
+        http.authorizeHttpRequests().requestMatchers("/**").permitAll()
+                .requestMatchers("/admin/**").hasAuthority("ADMIN")
                 .and()
                 .formLogin()
                 .loginPage("/login")
@@ -69,8 +68,8 @@ public class AdminConfiguration {
         return provider;
     }
 
-    @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration auth) throws Exception {
-        return auth.getAuthenticationManager();
-    }
+//    @Bean
+//    public AuthenticationManager authenticationManager(AuthenticationConfiguration auth) throws Exception {
+//        return auth.getAuthenticationManager();
+//    }
 }

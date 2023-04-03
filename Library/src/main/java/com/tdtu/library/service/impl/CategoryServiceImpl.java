@@ -33,8 +33,6 @@ public class CategoryServiceImpl implements CategoryService {
     public Category update(Category category) {
         Category updateCategory = repo.findById(category.getId()).get();
         updateCategory.setName(category.getName());
-        updateCategory.setActivated(category.isActivated());
-        updateCategory.setDeleted(category.isDeleted());
         return repo.save(updateCategory);
     }
 

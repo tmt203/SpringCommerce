@@ -25,11 +25,11 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <form enctype="multipart/form-data" th:action="@{save-product}" th:object="${productDto}" method="post"  class="form-horizontal">
+                    <form th:action="@{/update-product/{id} (id = ${productDto.id})}" method="post" enctype="multipart/form-data" th:object = "${productDto}">
                         <fieldset>
 
                             <!-- Form Name -->
-                            <legend>Add Product</legend>
+                            <legend>Update Product</legend>
 
                             <!-- Text input-->
                             <div class="form-group">
@@ -62,7 +62,7 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="brand">BRAND</label>
                                 <div class="col-md-4">
-                                    <select id="brand" name="brand" class="form-control">
+                                    <select th:field="*{brand}" id="brand" name="brand" class="form-control">
                                         <option value="null">Select</option>
                                         <option value="Toyota">Toyota</option>
                                         <option value="Chevrolet">Chevrolet</option>
@@ -75,7 +75,7 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="color">COLOR</label>
                                 <div class="col-md-4">
-                                    <select id="color" name="color" class="form-control">
+                                    <select th:field="*{color}" id="color" name="color" class="form-control">
                                         <option value="null">Select</option>
                                         <option value="Black">Black</option>
                                         <option value="White">White</option>
@@ -123,6 +123,7 @@
                                     <label class="col-md-4 control-label" for="productImage">IMAGE PRODUCT</label>
                                     <div class="col-md-4">
                                         <input id="productImage" name="productImage" class="input-file" type="file">
+                                        <img th:src="*{'data:image/jpeg;base64,' + {image}}" style="width: 40px; height: 40px;" >
                                     </div>
                                 </div>
                             </div>
@@ -157,17 +158,17 @@
     <div th:replace="fragments :: logoutModal"></div>
 
     <!-- Bootstrap core JavaScript-->
-    <script th:src="@{vendor/jquery/jquery.min.js}"></script>
-    <script th:src="@{vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
+    <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
 
     <!-- Core plugin JavaScript-->
-    <script th:src="@{vendor/jquery-easing/jquery.easing.min.js}"></script>
+    <script th:src="@{/vendor/jquery-easing/jquery.easing.min.js}"></script>
 
     <!-- Custom scripts for all pages-->
-    <script th:src="@{js/sb-admin-2.min.js}"></script>
+    <script th:src="@{/js/sb-admin-2.min.js}"></script>
 
     <!--  My script  -->
-    <script th:src="@{js/categories.js}"></script>
+    <script th:src="@{/js/categories.js}"></script>
 </body>
 
 </html>
