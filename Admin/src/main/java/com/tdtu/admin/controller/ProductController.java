@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.security.Principal;
 import java.util.List;
 
 @Controller
@@ -17,11 +18,21 @@ public class ProductController {
     private ProductService productService;
 
     @GetMapping("/products")
-    public String products(Model model) {
+    public String products(Model model, Principal principal) {
+        // Principal: Check user already logged in or not
+        if (principal == null) {
+            return "redirect:/login";
+        }
         List<ProductDto> productDtoList = productService.findAll();
-        model.addAttribute("title", "Product");
+        model.addAttribute("title", "Product Management");
         model.addAttribute("products", productDtoList);
         model.addAttribute("size", productDtoList.size());
         return "products";
+    }
+
+    @GetMapping("/add-product")
+    public String addProductForm(Model model) {
+        model.addAttribute("product", new ProductDto());
+        return "add-product";
     }
 }
