@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df292812-a472-4585-a0b2-ed3c39b615b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/add-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/java/com/tdtu/admin/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/java/com/tdtu/admin/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-springboot.iml" afterDir="false" />
-    </list>
+    <list default="true" id="df292812-a472-4585-a0b2-ed3c39b615b5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +58,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Desktop\CN Java\Midterm\ecommerce-springboot\Admin\src\main\resources\templates" />
       <recent name="C:\Users\ACER\Desktop\CN Java\ThucHanh\ecommerce-springboot\Admin\src\main\resources\templates" />
       <recent name="C:\Users\ACER\Desktop\CN Java\ThucHanh\ecommerce-springboot\Admin\src\main\resources\static\vendor\jquery" />
       <recent name="C:\Users\ACER\Desktop\CN Java\ThucHanh\ecommerce-springboot\Admin\src\main\resources\static" />
@@ -139,7 +133,7 @@
       <workItem from="1680363323956" duration="2990000" />
       <workItem from="1680392198696" duration="36135000" />
       <workItem from="1680456420050" duration="173000" />
-      <workItem from="1680481099023" duration="1028000" />
+      <workItem from="1680481099023" duration="1359000" />
     </task>
     <servers />
   </component>
