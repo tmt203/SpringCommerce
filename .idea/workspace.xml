@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df292812-a472-4585-a0b2-ed3c39b615b5" name="Default Changelist" comment="" />
+    <list default="true" id="df292812-a472-4585-a0b2-ed3c39b615b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/dto/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/ProductServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +138,7 @@
       <workItem from="1680363323956" duration="2990000" />
       <workItem from="1680392198696" duration="36135000" />
       <workItem from="1680456420050" duration="173000" />
-      <workItem from="1680481099023" duration="1359000" />
+      <workItem from="1680481099023" duration="1867000" />
     </task>
     <servers />
   </component>

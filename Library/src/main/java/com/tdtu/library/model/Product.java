@@ -17,18 +17,21 @@ public class Product {
     private Long id;
 
     private String name;
-    private String description;
     private double price;
+    private String brand;
+    private String color;
+
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "category_id", referencedColumnName = "category_id")
+    private Category category;
+
+    private String description;
     private double sale;
     private int currentQuantity;
 
     @Lob
     @Column(columnDefinition = "MEDIUMBLOB")
     private String image;
-
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "category_id", referencedColumnName = "category_id")
-    private Category category;
 
     private boolean is_activated;
     private boolean is_deleted;
