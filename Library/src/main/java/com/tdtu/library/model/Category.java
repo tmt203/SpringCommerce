@@ -17,12 +17,16 @@ public class Category {
     private Long id;
 
     private String name;
-    private boolean is_activated;
-    private boolean is_deleted;
+
+    @Column(name = "is_activated")
+    private boolean isActivated;
+
+    @Column(name = "is_deleted")
+    private boolean isDeleted;
 
     public Category(String name) {
         this.name = name;
-        is_activated = true;
-        is_deleted = false;
+        isActivated = true;
+        isDeleted = false;
     }
 }

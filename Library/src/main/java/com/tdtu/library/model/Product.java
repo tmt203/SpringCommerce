@@ -33,6 +33,9 @@ public class Product {
     @Column(columnDefinition = "MEDIUMBLOB")
     private String image;
 
-    private boolean is_activated;
-    private boolean is_deleted;
+    @Column(name = "is_activated")
+    private boolean isActivated;
+
+    @Column(name = "is_deleted")
+    private boolean isDeleted;
 }

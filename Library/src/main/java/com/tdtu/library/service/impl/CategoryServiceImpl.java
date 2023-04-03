@@ -33,24 +33,29 @@ public class CategoryServiceImpl implements CategoryService {
     public Category update(Category category) {
         Category updateCategory = repo.findById(category.getId()).get();
         updateCategory.setName(category.getName());
-        updateCategory.set_activated(category.is_activated());
-        updateCategory.set_deleted(category.is_deleted());
+        updateCategory.setActivated(category.isActivated());
+        updateCategory.setDeleted(category.isDeleted());
         return repo.save(updateCategory);
     }
 
     @Override
     public void deleteById(Long id) {
         Category deleteCategory = repo.getReferenceById(id);
-        deleteCategory.set_deleted(true);
-        deleteCategory.set_activated(false);
+        deleteCategory.setDeleted(true);
+        deleteCategory.setActivated(false);
         repo.save(deleteCategory);
     }
 
     @Override
     public void enabledById(Long id) {
         Category enabledCategory = repo.getReferenceById(id);
-        enabledCategory.set_activated(true);
-        enabledCategory.set_deleted(false);
+        enabledCategory.setActivated(true);
+        enabledCategory.setDeleted(false);
         repo.save(enabledCategory);
+    }
+
+    @Override
+    public List<Category> findAllByActivated() {
+        return repo.findAllByActivated();
     }
 }

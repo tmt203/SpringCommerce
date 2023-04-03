@@ -19,6 +19,6 @@ public class ProductDto {
     private double sale;
     private int currentQuantity;
     private String image;
-    private boolean is_activated;
-    private boolean is_deleted;
+    private boolean isActivated;
+    private boolean isDeleted;
 }

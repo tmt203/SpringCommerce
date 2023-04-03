@@ -59,8 +59,8 @@
                             <td th:text="${category.name}"></td>
                             <td>
                                 <a th:href="@{findById(id=${category.id})}" id="updateBtn" class="btn btn-primary">Edit</a>
-                                <a th:if="${category.is_activated} == true" th:href="@{delete-category(id=${category.id})}" class="btn btn-danger">Delete</a>
-                                <a th:if="${category.is_activated} == false" th:href="@{enable-category(id=${category.id})}" class="btn btn-success">Enable</a>
+                                <a th:if="${category.isActivated} == true" th:href="@{delete-category(id=${category.id})}" class="btn btn-danger">Delete</a>
+                                <a th:if="${category.isActivated} == false" th:href="@{enable-category(id=${category.id})}" class="btn btn-success">Enable</a>
                             </td>
                         </tr>
                         </tbody>
