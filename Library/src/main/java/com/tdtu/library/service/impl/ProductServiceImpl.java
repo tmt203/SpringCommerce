@@ -125,11 +125,17 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public void deleteById(Long id) {
-
+        Product product = repo.getReferenceById(id);
+        product.setDeleted(true);
+        product.setActivated(false);
+        repo.save(product);
     }
 
     @Override
     public void enableById(Long id) {
-
+        Product product = repo.getReferenceById(id);
+        product.setActivated(true);
+        product.setDeleted(false);
+        repo.save(product);
     }
 }
