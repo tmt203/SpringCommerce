@@ -7,6 +7,7 @@ import com.tdtu.library.service.ProductService;
 import com.tdtu.library.utils.ImageUpload;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -27,26 +28,9 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductDto> findAll() {
-        List<ProductDto> productDtoList = new ArrayList<>();
         List<Product> products = repo.findAll();
         // Transfer product from DB to DTO. Then DTO transfer to View
-        for (Product product : products) {
-            ProductDto productDto = new ProductDto();
-            productDto.setId(product.getId());
-            productDto.setName(product.getName());
-            productDto.setPrice(product.getPrice());
-            productDto.setBrand(product.getBrand());
-            productDto.setColor(product.getColor());
-            productDto.setCategory(product.getCategory());
-            productDto.setDescription(product.getDescription());
-            productDto.setSale(product.getSale());
-            productDto.setCurrentQuantity(product.getCurrentQuantity());
-            productDto.setImage(product.getImage());
-            productDto.setActivated(product.isActivated());
-            productDto.setDeleted(product.isDeleted());
-            productDtoList.add(productDto);
-        }
-        return productDtoList;
+        return convert2ProductDtoList(products);
     }
 
     @Override
@@ -143,22 +127,52 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Page<Product> pageProducts(int pageNumber) {
+    public Page<ProductDto> pageProducts(int pageNumber) {
         Pageable pageable = PageRequest.of(pageNumber, 5); // 5 items per page
-        Page<Product> productPages = repo.pageProduct(pageable);
+        List<ProductDto> productDtoList = convert2ProductDtoList(repo.findAll());
+        Page<ProductDto> productPages = toPage(productDtoList, pageable);
         return productPages;
     }
 
     @Override
-    public Page<Product> searchProducts(int pageNumber, String keyword) {
+    public Page<ProductDto> searchProducts(int pageNumber, String keyword) {
         Pageable pageable = PageRequest.of(pageNumber, 5);
-        Page<Product> products = repo.searchProducts(keyword, pageable);
+        List<ProductDto> productDtoList = convert2ProductDtoList(repo.searchProductList(keyword));
+        Page<ProductDto> products = toPage(productDtoList, pageable);
         return products;
     }
 
     private Page toPage(List<ProductDto> productDtoList, Pageable pageable) {
+        // Check if the request page beyond the range of the available results
         if (pageable.getOffset() >= productDtoList.size()) {
             return Page.empty();
         }
+        int startIndex = (int) pageable.getOffset();
+        int endIndex = (pageable.getOffset() + pageable.getPageSize()) > productDtoList.size()
+                ? productDtoList.size()
+                : (int) (pageable.getOffset() + pageable.getPageSize());
+        List subProductDtoList = productDtoList.subList(startIndex, endIndex);
+        return new PageImpl(subProductDtoList, pageable, productDtoList.size());
+    }
+
+    private List<ProductDto> convert2ProductDtoList(List<Product> products) {
+        List<ProductDto> productDtoList = new ArrayList<>();
+        for (Product product : products) {
+            ProductDto productDto = new ProductDto();
+            productDto.setId(product.getId());
+            productDto.setName(product.getName());
+            productDto.setPrice(product.getPrice());
+            productDto.setBrand(product.getBrand());
+            productDto.setColor(product.getColor());
+            productDto.setCategory(product.getCategory());
+            productDto.setDescription(product.getDescription());
+            productDto.setSale(product.getSale());
+            productDto.setCurrentQuantity(product.getCurrentQuantity());
+            productDto.setImage(product.getImage());
+            productDto.setActivated(product.isActivated());
+            productDto.setDeleted(product.isDeleted());
+            productDtoList.add(productDto);
+        }
+        return productDtoList;
     }
 }
