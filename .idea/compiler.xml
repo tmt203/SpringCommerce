@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Admin" />
+        <module name="Customer" />
         <module name="Library" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Admin" target="16" />
+      <module name="Customer" target="17" />
       <module name="ecommerce-springboot" target="19" />
       <module name="Library" target="16" />
     </bytecodeTargetLevel>
@@ -20,6 +22,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Admin" options="-parameters" />
+      <module name="Customer" options="-parameters" />
       <module name="Library" options="-parameters" />
     </option>
   </component>

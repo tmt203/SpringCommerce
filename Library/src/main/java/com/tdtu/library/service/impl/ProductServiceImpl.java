@@ -148,9 +148,7 @@ public class ProductServiceImpl implements ProductService {
             return Page.empty();
         }
         int startIndex = (int) pageable.getOffset();
-        int endIndex = (pageable.getOffset() + pageable.getPageSize()) > productDtoList.size()
-                ? productDtoList.size()
-                : (int) (pageable.getOffset() + pageable.getPageSize());
+        int endIndex = Math.min((int) pageable.getOffset() + pageable.getPageSize(), productDtoList.size());
         List subProductDtoList = productDtoList.subList(startIndex, endIndex);
         return new PageImpl(subProductDtoList, pageable, productDtoList.size());
     }

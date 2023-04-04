@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df292812-a472-4585-a0b2-ed3c39b615b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/java/com/tdtu/admin/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/java/com/tdtu/admin/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerce-springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-springboot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +91,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AdminApplication">
+  <component name="RunManager" selected="Spring Boot.CustomerApplication">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tdtu.App" />
       <module name="ecommerce-springboot" />
@@ -95,9 +105,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tdtu.admin.AdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Customer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tdtu.customer.CustomerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,7 +172,7 @@
       <workItem from="1680481099023" duration="30053000" />
       <workItem from="1680533502586" duration="2649000" />
       <workItem from="1680536532189" duration="11561000" />
-      <workItem from="1680574703933" duration="13026000" />
+      <workItem from="1680574703933" duration="24160000" />
     </task>
     <servers />
   </component>
