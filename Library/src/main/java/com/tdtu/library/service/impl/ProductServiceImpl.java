@@ -6,6 +6,9 @@ import com.tdtu.library.repository.ProductRepository;
 import com.tdtu.library.service.ProductService;
 import com.tdtu.library.utils.ImageUpload;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -137,5 +140,12 @@ public class ProductServiceImpl implements ProductService {
         product.setActivated(true);
         product.setDeleted(false);
         repo.save(product);
+    }
+
+    @Override
+    public Page<Product> pageProducts(int pageNumber) {
+        Pageable pageable = PageRequest.of(pageNumber, 5); // 5 items per page
+        Page<Product> productPages = repo.pageProduct(pageable);
+        return productPages;
     }
 }

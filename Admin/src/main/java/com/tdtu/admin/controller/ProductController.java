@@ -7,6 +7,7 @@ import com.tdtu.library.service.CategoryService;
 import com.tdtu.library.service.ProductService;
 import com.tdtu.library.service.impl.ProductServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -35,6 +36,20 @@ public class ProductController {
         model.addAttribute("title", "Product Management");
         model.addAttribute("products", productDtoList);
         model.addAttribute("size", productDtoList.size());
+        return "products";
+    }
+
+    @GetMapping("/products/{pageNumber}")
+    public String productsPage(@PathVariable("pageNumber") int pageNumber, Model model, Principal principal) {
+        if (principal == null) {
+            return "redirect:/login";
+        }
+        Page<Product> products = productService.pageProducts(pageNumber);
+        model.addAttribute("title", "Product Management");
+        model.addAttribute("products", products);
+        model.addAttribute("size", products.getSize());
+        model.addAttribute("totalPages", products.getTotalPages());
+        model.addAttribute("currentPage", pageNumber);
         return "products";
     }
 
