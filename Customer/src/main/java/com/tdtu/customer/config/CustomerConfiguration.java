@@ -1,10 +1,8 @@
-package com.tdtu.admin.config;
+package com.tdtu.customer.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
-import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
@@ -16,11 +14,10 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 @EnableWebSecurity
-public class AdminConfiguration {
-
+public class CustomerConfiguration {
     @Bean
     public UserDetailsService userDetailsService() {
-        return new AdminServiceConfig();
+        return new CustomerServiceConfig();
     }
 
     @Bean
@@ -39,7 +36,7 @@ public class AdminConfiguration {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests().requestMatchers("/**").permitAll()
-                .requestMatchers("/admin/**").hasAuthority("ADMIN")
+                .requestMatchers("/customer/**").hasAuthority("CUSTOMER")
                 .and()
                 .formLogin()
                 .loginPage("/login")
@@ -67,9 +64,4 @@ public class AdminConfiguration {
         return (web) -> web.ignoring()
                 .requestMatchers("/css/**","/dist/**", "/img/**", "/js/**", "/less/**", "/pages/**", "/scss/**", "/vendor/**");
     }
-
-//    @Bean
-//    public AuthenticationManager authenticationManager(AuthenticationConfiguration auth) throws Exception {
-//        return auth.getAuthenticationManager();
-//    }
 }

@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df292812-a472-4585-a0b2-ed3c39b615b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/config/CustomerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/config/CustomerDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/config/CustomerServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/CustomerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-springboot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +24,7 @@
       <list>
         <option value="HTML File" />
         <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -172,7 +163,7 @@
       <workItem from="1680481099023" duration="30053000" />
       <workItem from="1680533502586" duration="2649000" />
       <workItem from="1680536532189" duration="11561000" />
-      <workItem from="1680574703933" duration="24160000" />
+      <workItem from="1680574703933" duration="25108000" />
     </task>
     <servers />
   </component>
