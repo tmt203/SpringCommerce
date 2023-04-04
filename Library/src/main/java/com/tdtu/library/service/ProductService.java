@@ -3,6 +3,7 @@ package com.tdtu.library.service;
 import com.tdtu.library.dto.ProductDto;
 import com.tdtu.library.model.Product;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
@@ -16,4 +17,5 @@ public interface ProductService {
     void enableById(Long id);
 
     Page<Product> pageProducts(int pageNumber);
+    Page<Product> searchProducts(int pageNumber, String keyword);
 }

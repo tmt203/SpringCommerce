@@ -148,4 +148,17 @@ public class ProductServiceImpl implements ProductService {
         Page<Product> productPages = repo.pageProduct(pageable);
         return productPages;
     }
+
+    @Override
+    public Page<Product> searchProducts(int pageNumber, String keyword) {
+        Pageable pageable = PageRequest.of(pageNumber, 5);
+        Page<Product> products = repo.searchProducts(keyword, pageable);
+        return products;
+    }
+
+    private Page toPage(List<ProductDto> productDtoList, Pageable pageable) {
+        if (pageable.getOffset() >= productDtoList.size()) {
+            return Page.empty();
+        }
+    }
 }

@@ -53,6 +53,24 @@ public class ProductController {
         return "products";
     }
 
+    @GetMapping("/search-result/{pageNumber}")
+    public String searchProducts(@PathVariable("pageNumber") int pageNumber,
+                                 @RequestParam("keyword") String keyword,
+                                 Model model,
+                                 Principal principal) {
+        if (principal == null) {
+            return "redirect:/login";
+        }
+        Page<Product> products = productService.searchProducts(pageNumber, keyword);
+        System.out.println(products.getSize());
+        model.addAttribute("title", "Search result");
+        model.addAttribute("products", products);
+        model.addAttribute("size", products.getSize());
+        model.addAttribute("currentPage", pageNumber);
+        model.addAttribute("totalPages", products.getTotalPages());
+        return "result-products";
+    }
+
     @GetMapping("/add-product")
     public String addProductForm(Model model, Principal principal) {
         if (principal == null) {
