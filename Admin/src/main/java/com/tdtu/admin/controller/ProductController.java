@@ -94,7 +94,7 @@ public class ProductController {
             e.printStackTrace();
             ra.addFlashAttribute("errorMessage", "Add product failed !");
         }
-        return "redirect:/products";
+        return "redirect:/products/0";
     }
 
     @GetMapping("/update-product/{id}")
@@ -122,7 +122,7 @@ public class ProductController {
             e.printStackTrace();
             ra.addFlashAttribute("errorMessage", "Update product failed !");
         }
-        return "redirect:/products";
+        return "redirect:/products/0";
     }
 
     @RequestMapping(value = "/enable-product/{id}", method = {RequestMethod.GET, RequestMethod.PUT})

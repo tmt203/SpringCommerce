@@ -14,7 +14,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Admin" target="16" />
-      <module name="Customer" target="17" />
+      <module name="Customer" target="16" />
       <module name="ecommerce-springboot" target="19" />
       <module name="Library" target="16" />
     </bytecodeTargetLevel>
