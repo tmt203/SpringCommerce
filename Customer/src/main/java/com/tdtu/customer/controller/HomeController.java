@@ -23,17 +23,21 @@ public class HomeController {
     @Autowired
     private CategoryService categoryService;
 
-    @RequestMapping(value = {"/index","/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/home","/"}, method = RequestMethod.GET)
     public String homePage(Model model) {
+        model.addAttribute("title", "Introduction page");
         return "home";
     }
 
-    @GetMapping("/home")
+    @GetMapping("/products")
     public String index(Model model) {
         List<Category> categories = categoryService.findAll();
         List<ProductDto> productDtoList = productService.findAll();
+        model.addAttribute("title", "Products");
         model.addAttribute("categories", categories);
         model.addAttribute("products", productDtoList);
-        return "index";
+        return "products";
     }
+
+
 }

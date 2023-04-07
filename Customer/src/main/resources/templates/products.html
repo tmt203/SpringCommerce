@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<!-- Basic -->
+
+<head th:replace="fragments :: header">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Start Main Top -->
+    <div th:replace="fragments :: main-top"></div>
+    <!-- End Main Top -->
+
+    <!-- Start Header -->
+    <div th:replace="fragments :: main-header"></div>
+    <!-- End Header -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+
+    <!-- Start Slider -->
+    <div th:replace="fragments :: slider"></div>
+    <!-- End Slider -->
+
+    <!-- Start Products  -->
+    <div th:each="category : ${categories}" class="products-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1 th:text="${category.name}"></h1>
+                        <p>Have you a really good car!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="special-menu text-center">
+                        <div class="button-group filter-button-group">
+                            <button class="active" data-filter="*">All</button>
+                            <button data-filter=".best-seller">Best seller</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Start Products  -->
+            <div class="row special-list">
+                <div class="col-lg-3 col-md-6 special-grid" th:each="product : ${products}"
+                     th:if="${product.category.name == category.name}" >
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <img th:src="@{'data:image/jpeg;base64,' + ${product.image}}" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <ul>
+                                    <li><a th:href="@{'/find-product/' + ${product.id}}" data-toggle="tooltip"
+                                           data-placement="right" title="View"><i
+                                            class="fas fa-eye"></i></a></li>
+                                </ul>
+                                <a class="cart" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4 th:text="${product.name}"></h4>
+                            <h5 th:text="'$' + ${product.price}"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Products  -->
+
+        </div>
+    </div>
+    <!-- End Products  -->
+
+    <!-- Start Feed -->
+    <!-- End Feed -->
+
+    <!-- Start Footer  -->
+    <footer th:replace="fragments :: footer"></footer>
+    <!-- End Footer  -->
+
+    <!-- ALL JS FILES -->
+    <div th:replace="fragments :: script"></div>
+</body>
+
+</html>

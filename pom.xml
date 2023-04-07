@@ -14,6 +14,7 @@
     <module>Library</module>
     <module>Admin</module>
     <module>Customer</module>
+    <module>API</module>
   </modules>
 
   <properties>

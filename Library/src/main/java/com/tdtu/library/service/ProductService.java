@@ -9,6 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
 public interface ProductService {
+    // Admin
     List<ProductDto> findAll();
     ProductDto findById(Long id);
     Product save(MultipartFile productImage, ProductDto productDto);
@@ -18,4 +19,9 @@ public interface ProductService {
 
     Page<ProductDto> pageProducts(int pageNumber);
     Page<ProductDto> searchProducts(int pageNumber, String keyword);
+
+    // Customer
+    List<Product> getAllProducts();
+    List<Product> listViewProducts();
+    Product getProductById(Long id);
 }

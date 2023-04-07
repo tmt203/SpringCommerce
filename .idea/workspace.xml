@@ -5,127 +5,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df292812-a472-4585-a0b2-ed3c39b615b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/baguetteBox.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/bootsnav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/bootstrap-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/carousel-ticker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/code_animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/superslides.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crab 01 - Crab Pasta With Snap Peas and Mint.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crab 02 - Crab Toast.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crab 03 - Crab and Shrimp Boil Pasta.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crab 04 - Soft Shell Crab Crostini With Arugula Butter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crab 05 - Spacy Crab Dip.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crab 06 - Baked Crab Dip With Old Bay and Ritz Crackers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crab 07 - Easy Crab Recipes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crap Soft-Shell - Copy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crap Soft-Shell 02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crap Soft-Shell.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Fish 01 - Fish Tacos.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Fish 02 - Catfish parmesan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Fish 03 - Lemon-Batter Fish.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Fish 04 - Red Pepper &amp; Parmesan Tilapia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Fish 05 - Almond-Topped Fish.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Fish 06 - Tuna-Filled Shells.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Intro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 01 - Lobster thermidor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 02 - Lobster rolls.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 03 - Lobster with Thermidor butter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 04 - Warm lobster..jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 05 - Lobster Pasta With Yellow Tomatoes and Basil.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 06 - Lobster Stew With a Pastry Lid.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 07 - Lobster Thermidor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 08 - Grilled LObster Tails with Stelline and Lemon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 01 - Grilled Octopus with Ancho Chile Sauce.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 02 - Octopus with Chorizo and Potatoes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 03 - Octopus Turnovers with Spicy Creole Mayonnaise.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 04 - Pan-Seared Octopus with Italian Vegetable Salad.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 05 - Octopus with Black Bean Pear Sauce.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 06 - Red Wine–Braised Baby Octopus with Black Olives.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 07 - Fried Calamari with Spanish Paprika and Lemon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 08 - Charred Octopus with Jicama Salad and Paste.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp 01 - Shrimp Monterey.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp 02 - Southern Shrimp and Grits.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp 03 - Shrimp Tostadas with Avocado Salsa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp 04 - Popcorn Shrimp Tacos with Cabbage Slaw.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp 05 - Grilled Chorizo and Shrimp Paella.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp 07 - Spicy garlic shrimp skewers.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp 08 - Grilled Shrimp and Chorizo Appetizers.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp06-Spinach_and_Shrimp_Fra_Diavolo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/contact-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/img-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/img-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/img-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/ins-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/instagram-img-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/profile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/baguetteBox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/bootsnav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/bootstrap-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/contact-form-script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/form-validator.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/images-loded.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/inewsticker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/isotope.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/jquery-3.2.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/jquery.nicescroll.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/jquery.superslides.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/checkout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/contact-us.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/fragments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/my-account.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/product-detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/shop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/src/main/java/com/tdtu/api/controller/RestAPIController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/cars-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/images/intro.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/java/com/tdtu/admin/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/java/com/tdtu/admin/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/static/img/products/mercedes-e-class-black.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/static/img/products/mercedes-e-class-black.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/static/img/products/mercedes-e-class-white.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/static/img/products/mercedes-e-class-white.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/templates/add-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/add-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/CustomerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crab 01 - Crab Pasta With Snap Peas and Mint.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crab 02 - Crab Toast.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crab 03 - Crab and Shrimp Boil Pasta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crab 04 - Soft Shell Crab Crostini With Arugula Butter.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crab 05 - Spacy Crab Dip.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crab 06 - Baked Crab Dip With Old Bay and Ritz Crackers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crab 07 - Easy Crab Recipes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crap Soft-Shell - Copy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crap Soft-Shell 02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Crap Soft-Shell.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Fish 01 - Fish Tacos.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Fish 02 - Catfish parmesan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Fish 03 - Lemon-Batter Fish.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Fish 04 - Red Pepper &amp; Parmesan Tilapia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Fish 05 - Almond-Topped Fish.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Fish 06 - Tuna-Filled Shells.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Intro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 01 - Lobster thermidor.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 02 - Lobster rolls.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 03 - Lobster with Thermidor butter.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 04 - Warm lobster..jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 05 - Lobster Pasta With Yellow Tomatoes and Basil.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 06 - Lobster Stew With a Pastry Lid.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 07 - Lobster Thermidor.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Lobster 08 - Grilled LObster Tails with Stelline and Lemon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 01 - Grilled Octopus with Ancho Chile Sauce.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 02 - Octopus with Chorizo and Potatoes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 03 - Octopus Turnovers with Spicy Creole Mayonnaise.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 04 - Pan-Seared Octopus with Italian Vegetable Salad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 05 - Octopus with Black Bean Pear Sauce.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 06 - Red Wine–Braised Baby Octopus with Black Olives.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 07 - Fried Calamari with Spanish Paprika and Lemon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Octopus 08 - Charred Octopus with Jicama Salad and Paste.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp 01 - Shrimp Monterey.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp 02 - Southern Shrimp and Grits.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp 03 - Shrimp Tostadas with Avocado Salsa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp 04 - Popcorn Shrimp Tacos with Cabbage Slaw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp 05 - Grilled Chorizo and Shrimp Paella.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp 07 - Spicy garlic shrimp skewers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp 08 - Grilled Shrimp and Chorizo Appetizers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/Shrimp06-Spinach_and_Shrimp_Fra_Diavolo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/contact-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/ins-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/images/instagram-img-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/contact-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/my-account.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/my-account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/product-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ecommerce-springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-springboot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +122,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="19" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Customer/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Customer/src/main/resources/static/images" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -181,11 +130,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Desktop\CN Java\Midterm\ecommerce-springboot\Customer\src\main\resources\static\images" />
       <recent name="C:\Users\ACER\Desktop\CN Java\Midterm\ecommerce-springboot\Customer\src\main\resources\templates" />
       <recent name="C:\Users\ACER\Desktop\CN Java\Midterm\ecommerce-springboot\Customer\src\main\resources\static" />
       <recent name="C:\Users\ACER\Desktop\CN Java\Midterm\ecommerce-springboot\Admin\src\main\resources\templates" />
       <recent name="C:\Users\ACER\Desktop\CN Java\ThucHanh\ecommerce-springboot\Admin\src\main\resources\templates" />
-      <recent name="C:\Users\ACER\Desktop\CN Java\ThucHanh\ecommerce-springboot\Admin\src\main\resources\static\vendor\jquery" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ACER\Desktop\CN Java\ThucHanh\ecommerce-springboot\Admin\src\main\resources\static\css" />
@@ -199,7 +148,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AdminApplication">
+  <component name="RunManager" selected="Spring Boot.CustomerApplication">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tdtu.App" />
       <module name="ecommerce-springboot" />
@@ -213,13 +162,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -227,6 +178,17 @@
     <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tdtu.admin.AdminApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="API" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tdtu.api.ApiApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -245,6 +207,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Spring Boot.AdminApplication" />
+      <item itemvalue="Spring Boot.ApiApplication" />
+      <item itemvalue="Spring Boot.CustomerApplication" />
+      <item itemvalue="Spring Boot.LibraryApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
@@ -279,7 +248,11 @@
       <workItem from="1680533502586" duration="2649000" />
       <workItem from="1680536532189" duration="11561000" />
       <workItem from="1680574703933" duration="28919000" />
-      <workItem from="1680662672474" duration="14748000" />
+      <workItem from="1680662672474" duration="21296000" />
+      <workItem from="1680705097435" duration="190000" />
+      <workItem from="1680772822483" duration="652000" />
+      <workItem from="1680783398006" duration="5234000" />
+      <workItem from="1680823398686" duration="14029000" />
     </task>
     <servers />
   </component>

@@ -9,14 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Site Metas -->
-    <title>Menu</title>
+    <title th:text="${title}"></title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" th:href="@{images/favicon.ico}" type="image/x-icon">
+    <link rel="apple-touch-icon" th:href="@{images/apple-touch-icon.png}">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
@@ -27,7 +27,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" th:href="@{/css/custom.css}">
 </head>
-
 <body>
 
 <!-- Start Main Top -->
@@ -61,7 +60,7 @@
                                 <i class="fab fa-opencart"></i> Freeship
                             </li>
                             <li>
-                                <i class="fab fa-opencart"></i> 10% off Entire Purchase Promo code: OceanPrime
+                                <i class="fab fa-opencart"></i> 10% off Entire Purchase Promo code: VieCars
                             </li>
                             <li>
                                 <i class="fab fa-opencart"></i> Off upto 10%! Shop Now
@@ -73,7 +72,7 @@
                                 <i class="fab fa-opencart"></i> Freeship
                             </li>
                             <li>
-                                <i class="fab fa-opencart"></i> 10% off Entire Purchase Promo code: OceanPrime
+                                <i class="fab fa-opencart"></i> 10% off Entire Purchase Promo code: VieCars
                             </li>
                             <li>
                                 <i class="fab fa-opencart"></i> Off 10%! Shop Now
@@ -98,7 +97,7 @@
                         aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <!--<a class="navbar-brand" href="index.html"><img src="images/logo1.png" class="logo" width="180" height="150" alt=""></a> -->
+                <!--<a class="navbar-brand" href="products.html"><img src="images/logo1.png" class="logo" width="180" height="150" alt=""></a> -->
             </div>
             <!-- End Header Navigation -->
 
@@ -106,12 +105,12 @@
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                     <li class="nav-item"><a class="nav-link"th:href="@{/}">Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" th:href="@{/home}">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" th:href="@{/products}">Products</a></li>
 
                     <li class="dropdown">
                         <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Shop</a>
                         <ul class="dropdown-menu">
-                            <li><a th:href="@{/products}">Shop Detail</a></li>
+                            <li><a th:href="@{/show-products}">Shop Detail</a></li>
                             <li><a href="product-detail.html">Product Detail</a></li>
                             <li><a href="cart.html">Cart</a></li>
                             <li><a href="checkout.html">Checkout</a></li>
@@ -139,34 +138,7 @@
             <!-- End Atribute Navigation -->
         </div>
         <!-- Start Side Menu -->
-        <div class="side">
-            <a href="#" class="close-side"><i class="fa fa-times"></i></a>
-            <li class="cart-box">
-                <ul class="cart-list">
-                    <li>
-                        <a href="#" class="photo"><img th:src="@{/images/Lobster 02 - Lobster rolls.jpg}" class="cart-thumb"
-                                                       alt=""/></a>
-                        <h6><a href="#">Lobster rolls </a></h6>
-                        <p>1 - <span class="price">$80.00</span></p>
-                    </li>
-                    <li>
-                        <a href="#" class="photo"><img th:src="@{/images/Octopus 05 - Octopus with Black Bean Pear Sauce.jpg}"
-                                                       class="cart-thumb" alt=""/></a>
-                        <h6><a href="#">Octopus with Black Bean</a></h6>
-                        <p>1 - <span class="price">$60.00</span></p>
-                    </li>
-                    <li>
-                        <a href="#" class="photo"><img th:src="@{/images/Crab 02 - Crab Toast.jpg}" class="cart-thumb" alt=""/></a>
-                        <h6><a href="#">Crab Toast</a></h6>
-                        <p>1 - <span class="price">$40.00</span></p>
-                    </li>
-                    <li class="total">
-                        <a href="cart.html" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
-                        <span class="float-right"><strong>Total</strong>: $180.00</span>
-                    </li>
-                </ul>
-            </li>
-        </div>
+
         <!-- End Side Menu -->
     </nav>
     <!-- End Navigation -->
@@ -230,48 +202,7 @@
 <!-- End Slider -->
 
 <!-- Start Feed  -->
-<div class="instagram-box" th:fragment="instagram-box">
-    <div class="main-instagram owl-carousel owl-theme">
-        <div class="item">
-            <div class="ins-inner-box">
-                <a href="index.html"><img th:src="@{/images/Fish 01 - Fish Tacos.jpg}" alt=""/></a>
 
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <img th:src="@{/images/instagram-img-02.jpg}" alt=""/>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <a href="index.html"><img th:src="@{/images/Fish 04 - Red Pepper & Parmesan Tilapia.jpg}" alt=""/></a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <a href="index.html"><img th:src="@{/images/Fish 05 - Almond-Topped Fish.jpg}" alt=""/></a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <a href="index.html"><img th:src="@{/images/Shrimp 03 - Shrimp Tostadas with Avocado Salsa.jpg}" alt=""/></a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <a href="index.html"><img th:src="@{/images/Shrimp 08 - Grilled Shrimp and Chorizo Appetizers.jpg}"
-                                          alt=""/></a>
-            </div>
-        </div>
-        <div class="item">
-            <div class="ins-inner-box">
-                <a href="index.html"><img th:src="@{/images/Octopus 06 - Red Wine–Braised Baby Octopus with Black Olives.jpg}"
-                                          alt=""/></a>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- End Feed  -->
 
 
@@ -301,7 +232,7 @@
                 <div class="col-lg-4 col-md-12 col-sm-12">
                     <div class="footer-top-box">
                         <h3>Social Media</h3>
-                        <p>Come with Ocean Prime shop - Only Fresh </p>
+                        <p>Come with VieCars - Only Quality Cars </p>
                         <ul>
                             <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
