@@ -32,19 +32,7 @@
 <!-- End Top Search -->
 
 <!-- Start All Title Box -->
-<div class="all-title-box">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Shop Detail</h2>
-                <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="home.html">Home</a></li>
-                    <li class="breadcrumb-item active"> Shop Detail</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+<div th:replace="fragments :: slider"></div>
 <!-- End All Title Box -->
 
 <!-- Start Shop Page  -->
@@ -72,7 +60,10 @@
                                                                data-placement="right" title="View"><i
                                                                 class="fas fa-eye"></i></a></li>
                                                     </ul>
-                                                    <a class="cart" href="#">Add to Cart</a>
+                                                    <form th:action="@{/add-to-cart}" method="post">
+                                                        <input type="hidden" th:value="${product.id}" name="id">
+                                                        <button type="submit" class="btn hvr-hover text-white text-uppercase">Add to Cart</button>
+                                                    </form>
                                                 </div>
                                             </div>
                                             <div class="why-text">
@@ -97,12 +88,17 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-8 col-xl-8">
-                                            <div class="why-text full-width">
-                                                <h4 th:text="${viewProduct.name}"></h4>
-                                                <h5 th:text="${'$' + viewProduct.price}"></h5>
-                                                <p th:text="${viewProduct.description}"></p>
-                                                <a class="btn hvr-hover" href="#">Add to Cart</a>
-                                            </div>
+                                            <form th:action="@{/add-to-cart}" method="post">
+                                                <div class="why-text full-width">
+                                                    <h4 th:text="${viewProduct.name}"></h4>
+                                                    <h5 th:text="${'$' + viewProduct.price}"></h5>
+                                                    <p th:text="${viewProduct.description}"></p>
+                                                    <input type="hidden" th:value="${viewProduct.id}" name="id">
+                                                    <ul style="left: 0; bottom: 0;">
+                                                        <button type="submit" class="btn hvr-hover text-white text-uppercase">Add to Cart</button>
+                                                    </ul>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -113,7 +109,7 @@
             </div>
 
             <div class="col-xl-3 col-lg-3 col-sm-12 col-xs-12 sidebar-shop-left">
-                <div class="product-categori">
+                <div class="product-category">
                     <div class="search-product">
                         <form action="#">
                             <input class="form-control" placeholder="Search here..." type="text">
@@ -125,15 +121,8 @@
                             <h3>Categories</h3>
                         </div>
                         <div class="list-group list-group-collapse list-group-sm list-group-tree" id="list-group-men"
-                             data-children=".sub-men">
-                            <a href="#" class="list-group-item list-group-item-action">Crab <small class="text-muted">(7)</small></a>
-                            <a href="#" class="list-group-item list-group-item-action">Fish <small class="text-muted">(6)</small></a>
-                            <a href="#" class="list-group-item list-group-item-action"> Lobster <small
-                                    class="text-muted">(8) </small></a>
-                            <a href="#" class="list-group-item list-group-item-action"> Octopus <small
-                                    class="text-muted">(8)</small></a>
-                            <a href="#" class="list-group-item list-group-item-action"> Shrimp <small
-                                    class="text-muted">(8)</small></a>
+                             data-children=".sub-men" th:each="category : ${categories}">
+                            <a th:href="@{'/products-in-category/' + ${category.id}}" class="list-group-item list-group-item-action">[[${category.name}]] <small class="text-muted">([[${category.numOfProduct}]])</small></a>
                         </div>
                     </div>
                     <div class="filter-price-left">

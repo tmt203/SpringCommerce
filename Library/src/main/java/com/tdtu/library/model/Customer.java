@@ -43,9 +43,8 @@ public class Customer {
 
     private String address;
 
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "city_id", referencedColumnName = "city_id")
-    private City city;
+    @Column(name = "city")
+    private String city;
 
     @OneToOne(mappedBy = "customer")
     private Cart cart;

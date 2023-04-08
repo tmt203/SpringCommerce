@@ -1,5 +1,6 @@
 package com.tdtu.library.service.impl;
 
+import com.tdtu.library.dto.CategoryDto;
 import com.tdtu.library.model.Category;
 import com.tdtu.library.repository.CategoryRepository;
 import com.tdtu.library.service.CategoryService;
@@ -55,5 +56,11 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public List<Category> findAllByActivated() {
         return repo.findAllByActivated();
+    }
+
+    /* Customer */
+    @Override
+    public List<CategoryDto> getCategoryAndProducts() {
+        return repo.getCategoryAndProducts();
     }
 }

@@ -27,20 +27,21 @@
             <div class=" d-flex flex-column align-items-center text-uppercase">
                 <h1 class="mt-3">Register</h1>
             </div>
-            <div class="mb-3 d-flex flex-column">
-                <div class="d-flex">
-                    <div class="me-2">
+            <div class="mb-3 d-flex">
+                <div class="d-flex flex-column me-2">
+                    <div class="">
                         <label for="firstName" class="form-label">First name</label>
                         <input th:field="*{firstName}" name="firstName" type="text" class="form-control" id="firstName">
                     </div>
-                    <div class="ms-2">
+                    <div th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}" class="alert alert-warning"></div>
+                </div>
+
+                <div class="d-flex flex-column ms-2">
+                    <div class="">
                         <label for="lastName" class="form-label">Last name</label>
                         <input th:field="*{lastName}" name="lastName" type="text" class="form-control" id="lastName">
                     </div>
-                </div>
-                <div class="d-flex">
-                    <div th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}" class="alert alert-warning me-2"></div>
-                    <div th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}" class="alert alert-warning ms-2"></div>
+                    <div th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}" class="alert alert-warning"></div>
                 </div>
 
             </div>

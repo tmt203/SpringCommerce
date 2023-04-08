@@ -24,4 +24,9 @@ public interface ProductService {
     List<Product> getAllProducts();
     List<Product> listViewProducts();
     Product getProductById(Long id);
+    List<Product> getRelatedProductsById(Long categoryId);
+    List<Product> getProductsInCategory(Long categoryId);
+    List<Product> filterProductsByPriceDesc();
+    List<Product> filterProductsByPriceAsc();
+
 }
