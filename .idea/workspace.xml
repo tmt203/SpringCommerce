@@ -5,53 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df292812-a472-4585-a0b2-ed3c39b615b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/AccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/my-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/products-in-category.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/sort-price.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/dto/CategoryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/dto/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/CartRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/CityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/ItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/CityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/CityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/OrderDetailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/config/CustomerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/config/CustomerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/static/js/bootsnav.js" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/static/js/bootsnav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/check-out.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/contact-us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/my-account.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/product-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/shop-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecommerce-springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerce-springboot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/OrderDetail.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -230,7 +195,7 @@
       <workItem from="1680772822483" duration="652000" />
       <workItem from="1680783398006" duration="5234000" />
       <workItem from="1680823398686" duration="35749000" />
-      <workItem from="1680920429999" duration="42804000" />
+      <workItem from="1680920429999" duration="47523000" />
     </task>
     <servers />
   </component>

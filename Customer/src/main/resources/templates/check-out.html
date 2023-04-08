@@ -47,9 +47,8 @@
                     </div>
                     <div class="mb-3">
                         <label for="address">Address *</label>
-                        <p th:text="${customer.address + ' ' + customer.city + ' ' + customer.country}" id="address">
+                        <p th:text="${customer.address + ' ' + customer.city}" id="address">
                     </div>
-                    <hr class="mb-4">
                     <hr class="mb-4">
                     <div class="title"><span>Payment Methods</span></div>
                     <div class="d-block my-3">
@@ -69,10 +68,10 @@
                             <h3>Shopping cart</h3>
                         </div>
                         <div class="rounded p-2 bg-light">
-                            <div class="media mb-2 border-bottom" th:each="item : ${cart.cartItem}">
-                                <div class="media-body"><a href="product-detail.html"
+                            <div class="media mb-2 border-bottom" th:each="item : ${cart.items}">
+                                <div class="media-body"><a th:href="@{'/find-product/' + ${item.product.id}}"
                                                            th:text="${item.product.name}"> </a>
-                                    <div class="small text-muted">Price: $[[${item.product.costPrice}]] <span
+                                    <div class="small text-muted">Price: $[[${item.product.price}]] <span
                                             class="mx-2">|</span> Qty: [[${item.quantity}]] <span
                                             class="mx-2">|</span> Subtotal: $[[${cart.totalPrices}]]
                                     </div>
@@ -116,7 +115,7 @@
                         <hr>
                     </div>
                 </div>
-                <div class="col-12 d-flex shopping-box"><a th:href="@{/order}" class="ml-auto btn hvr-hover">Place Order</a></div>
+                <div class="col-12 d-flex shopping-box"><a th:href="@{/save-order}" class="ml-auto btn hvr-hover">Place Order</a></div>
             </div>
         </div>
     </div>
