@@ -22,3 +22,11 @@ The project has a total of 4 modules, of which 2 main modules are Admin and Cust
 
 ### Entity Relationship Diagram
 ![ERD](https://github.com/tmt203/SpringCommerce/blob/main/ERD.png)
+
+## How to run 
+Software install requirements: Intellij IDEA (Recommend using Ultimate version), MySQL server (Apache Netbeans or MySQL Workbench).<br> 
+Here is steps to run Admin module (others module are same):<br>
+
+![how-to-run](https://github.com/tmt203/SpringCommerce/blob/main/how-to-run.png)
+
+## Verify APIs 
