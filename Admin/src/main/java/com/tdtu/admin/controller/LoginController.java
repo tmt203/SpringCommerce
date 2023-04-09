@@ -14,10 +14,7 @@ import org.springframework.security.web.authentication.AnonymousAuthenticationFi
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
@@ -34,7 +31,7 @@ public class LoginController {
         return "login";
     }
 
-    @RequestMapping("/index")
+    @RequestMapping(value = {"/index", "/home"}, method = RequestMethod.GET)
     public String homePage(Model model) {
         model.addAttribute("title", "Home page");
         // Authentication: check user already logged in or not
