@@ -33,7 +33,7 @@ Here is steps to run Admin module (others module are same):<br>
 
 ## Verify APIs 
 Here is some snapshots of CRUD on Product (same for Order):
-- Products:
+- Products: <br>
 Get all products: <br>
 ![get-all-products](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/get-all-products.jpg)
 
@@ -49,9 +49,9 @@ Update product by id: <br>
 Delete product by id: <br>
 ![delete-product-by-id](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/delete-product-by-id.jpg)
 
-- Orders:
+- Orders: <br>
 Get all orders: <br>
 ![get-all-orders](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/get-all-orders.jpg)
 
-Get orders by customer id
+Get orders by customer id: <br>
 ![get-product-by-customer-id](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/get-product-by-customer-id.jpg)
