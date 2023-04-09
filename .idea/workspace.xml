@@ -93,17 +93,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tdtu.admin.AdminApplication" />
@@ -183,6 +172,7 @@
       <workItem from="1680783398006" duration="5234000" />
       <workItem from="1680823398686" duration="35749000" />
       <workItem from="1680920429999" duration="47634000" />
+      <workItem from="1681009627421" duration="325000" />
     </task>
     <servers />
   </component>
