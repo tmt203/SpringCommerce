@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df292812-a472-4585-a0b2-ed3c39b615b5" name="Default Changelist" comment="" />
+    <list default="true" id="df292812-a472-4585-a0b2-ed3c39b615b5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +81,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CustomerApplication">
+  <component name="RunManager" selected="Spring Boot.AdminApplication">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tdtu.App" />
       <module name="ecommerce-springboot" />
@@ -172,7 +174,7 @@
       <workItem from="1680783398006" duration="5234000" />
       <workItem from="1680823398686" duration="35749000" />
       <workItem from="1680920429999" duration="47634000" />
-      <workItem from="1681009627421" duration="325000" />
+      <workItem from="1681009627421" duration="1837000" />
     </task>
     <servers />
   </component>
