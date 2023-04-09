@@ -12,4 +12,4 @@
 
 
 ## Entity Relationship Diagram
-![ERD](https://github.com/tmt203/SpringCommerce/blob/main/Ecommerce.png)
+![ERD](https://github.com/tmt203/SpringCommerce/blob/main/ERD.png)
