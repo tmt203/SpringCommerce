@@ -1,0 +1,15 @@
+[
+  {
+    "category_id": 1,
+    "is_activated": "1",
+    "is_deleted": "0",
+    "name": "Hybrid"
+  },
+  {
+    "category_id": 2,
+    "is_activated": "1",
+    "is_deleted": "0",
+    "name": "Electric"
+  },
+  { "category_id": 3, "is_activated": "1", "is_deleted": "0", "name": "Sports" }
+]

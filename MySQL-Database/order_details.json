@@ -1,0 +1,5 @@
+[{"order_detail_id":1, "quantity":2, "total_price":0.0, "unit_price":35500.0, "order_id":1, "product_id":11},
+ {"order_detail_id":2, "quantity":3, "total_price":0.0, "unit_price":26995.0, "order_id":1, "product_id":3},
+ {"order_detail_id":3, "quantity":1, "total_price":0.0, "unit_price":14395.0, "order_id":1, "product_id":4},
+ {"order_detail_id":4, "quantity":1, "total_price":0.0, "unit_price":36500.0, "order_id":2, "product_id":10},
+ {"order_detail_id":5, "quantity":1, "total_price":0.0, "unit_price":16400.0, "order_id":2, "product_id":7}]

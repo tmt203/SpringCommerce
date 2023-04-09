@@ -1,0 +1,2 @@
+[{"order_id":1, "delivery_date":"", "notes":"", "order_date":"2023-04-09 03:40:45.462000", "order_status":"PENDING", "shipping_fee":0.0, "tax_fee":0.0, "total_price":166380.0, "customer_id":1},
+ {"order_id":2, "delivery_date":"", "notes":"", "order_date":"2023-04-09 03:47:59.214000", "order_status":"PENDING", "shipping_fee":0.0, "tax_fee":0.0, "total_price":52900.0, "customer_id":1}]

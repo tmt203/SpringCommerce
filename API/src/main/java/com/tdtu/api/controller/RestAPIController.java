@@ -1,8 +1,11 @@
 package com.tdtu.api.controller;
 
+import com.tdtu.library.dto.OrderDto;
 import com.tdtu.library.dto.ProductDto;
+import com.tdtu.library.model.Order;
 import com.tdtu.library.model.Product;
 import com.tdtu.library.repository.ProductRepository;
+import com.tdtu.library.service.OrderService;
 import com.tdtu.library.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,8 +22,13 @@ public class RestAPIController {
     @Autowired
     private ProductService productService;
 
+    @Autowired
+    private OrderService orderService;
+
+    // Products
+
     @GetMapping("/products")
-    public List<Product> products() {
+    public List<Product> getAllProducts() {
         return productService.getAllProducts();
     }
 
@@ -35,12 +43,54 @@ public class RestAPIController {
     }
 
     @PostMapping("/products")
-    public void addProduct(@RequestBody ProductDto productDto, @RequestParam("productImage") MultipartFile productImage) {
-        productService.save(productImage, productDto);
+    public void addProduct(@RequestBody ProductDto productDto) {
+        productService.save(null, productDto);
     }
 
     @PutMapping("/products/{id}")
-    public ResponseEntity<?> update(
+    public ResponseEntity<?> updateProductById(
+            @RequestBody ProductDto productDto,
+            @RequestParam("productImage") MultipartFile productImage,
+            @PathVariable("id") Long id) {
+        try {
+            productService.findById(id);
+            productService.update(productImage, productDto);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (NoSuchElementException e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @DeleteMapping("/products/{id}")
+    public ResponseEntity<?> deleteProductById(@PathVariable("id") Long id) {
+        try {
+            productService.findById(id);
+            productService.deleteById(id);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (NoSuchElementException e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    // Orders
+
+    @GetMapping("/orders")
+    public List<OrderDto> getAllOrders() {
+        return orderService.getAllOrders();
+    }
+
+    @GetMapping("/orders/{id}")
+    public List<OrderDto> getOrderByCustomerId(@PathVariable("id") Long id) {
+        return orderService.findAllByCustomerId(id);
+    }
+
+    @PostMapping("/orders")
+    public void addOrder(@RequestBody OrderDto orderDto) {
+        orderDto.save();
+    }
+
+    @PutMapping("/products/{id}")
+    public ResponseEntity<?> updateProductById(
             @RequestBody ProductDto productDto,
             @RequestParam("productImage") MultipartFile productImage,
             @PathVariable("id") Long id) {

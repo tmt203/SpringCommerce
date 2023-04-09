@@ -1,9 +1,8 @@
 package com.tdtu.library.service.impl;
 
-import com.tdtu.library.model.Cart;
-import com.tdtu.library.model.Item;
-import com.tdtu.library.model.Order;
-import com.tdtu.library.model.OrderDetail;
+import com.tdtu.library.dto.OrderDto;
+import com.tdtu.library.dto.ProductDto;
+import com.tdtu.library.model.*;
 import com.tdtu.library.repository.CartRepository;
 import com.tdtu.library.repository.ItemRepository;
 import com.tdtu.library.repository.OrderDetailRepository;
@@ -75,5 +74,37 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public void cancelOrder(Long id) {
         orderRepo.deleteById(id);
+    }
+
+    // ------
+
+
+    @Override
+    public List<OrderDto> getAllOrders() {
+        List<Order> orderList = orderRepo.findAll();
+        return convert2OrderDtoList(orderList);
+    }
+
+    @Override
+    public List<OrderDto> findAllByCustomerId(Long id) {
+        List<Order> orderList = orderRepo.findAllByCustomerId(id);
+        return convert2OrderDtoList(orderList);
+    }
+
+    private List<OrderDto> convert2OrderDtoList(List<Order> orderList) {
+        List<OrderDto> orderDtoList = new ArrayList<>();
+        for (Order order : orderList) {
+            OrderDto orderDto = new OrderDto();
+            orderDto.setId(order.getId());
+            orderDto.setNotes(order.getNotes());
+            orderDto.setOrderDate(order.getOrderDate());
+            orderDto.setOrderStatus(order.getOrderStatus());
+            orderDto.setShippingFee(order.getShippingFee());
+            orderDto.setTaxFee(order.getTaxFee());
+            orderDto.setDeliveryDate(order.getDeliveryDate());
+            orderDto.setTotalPrice(order.getTotalPrice());
+            orderDtoList.add(orderDto);
+        }
+        return orderDtoList;
     }
 }
