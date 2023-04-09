@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df292812-a472-4585-a0b2-ed3c39b615b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/order.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/OrderDetailRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/java/com/tdtu/customer/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/check-out.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/contact-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer/src/main/resources/templates/fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/model/OrderDetail.java" afterDir="false" />
-    </list>
+    <list default="true" id="df292812-a472-4585-a0b2-ed3c39b615b5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,7 +182,7 @@
       <workItem from="1680772822483" duration="652000" />
       <workItem from="1680783398006" duration="5234000" />
       <workItem from="1680823398686" duration="35749000" />
-      <workItem from="1680920429999" duration="47523000" />
+      <workItem from="1680920429999" duration="47634000" />
     </task>
     <servers />
   </component>
