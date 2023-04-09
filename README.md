@@ -20,5 +20,9 @@
 ## Code structure
 The project has a total of 4 modules, of which 2 main modules are Admin and Customer, 2 sub modules are Library and API. Two main modules Admin and Customer contains Config (to serve Spring Security) and Controller (to serve requests). Library module is responsible for providing all DTO (Data Transfer Object), Model, Repository, Service and Utils to serve 2 main modules, Admin and Customer. API module contains RestController to return results based on request.
 
+## How to run 
+Software install requirements: Intellij IDEA (Recommend using Ultimate version), MySQL server (Apache Netbeans or MySQL Workbench).
+![how-to-run]https://github.com/tmt203/SpringCommerce/blob/main/how-to-run.png)
+
 ### Entity Relationship Diagram
 ![ERD](https://github.com/tmt203/SpringCommerce/blob/main/ERD.png)
