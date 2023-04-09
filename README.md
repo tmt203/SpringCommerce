@@ -18,7 +18,7 @@
 - Software development practices: Use Continuous Delivery/Deployment (CD) to automatically deployed to production after passing through a series of automated tests and approval steps.. 
 
 ## Code structure
-The project has a total of 4 modules, of which 2 main modules are Admin and Customer, 2 sub modules are Library and API. Two main modules will contain Config (to serve Spring Security) and Controller (to serve requests). Library module is responsible for providing all DTO (Data Transfer Object), Model, Repository, Service and Utils to serve 2 main modules, Admin and Customer. API module contains RestController to return results based on request.
+The project has a total of 4 modules, of which 2 main modules are Admin and Customer, 2 sub modules are Library and API. Two main modules Admin and Customer contains Config (to serve Spring Security) and Controller (to serve requests). Library module is responsible for providing all DTO (Data Transfer Object), Model, Repository, Service and Utils to serve 2 main modules, Admin and Customer. API module contains RestController to return results based on request.
 
 ### Entity Relationship Diagram
 ![ERD](https://github.com/tmt203/SpringCommerce/blob/main/ERD.png)
