@@ -34,24 +34,24 @@ Here is steps to run Admin module (others module are same):<br>
 ## Verify APIs 
 Here is some snapshots of CRUD on Product (same for Order):
 - Products: <br>
-Get all products: <br>
-![get-all-products](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/get-all-products.jpg)
+  Get all products: <br>
+  ![get-all-products](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/get-all-products.jpg)
 
-Get product by id: <br>
-![get-product-by-id](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/get-product-by-id.jpg)
+  Get product by id: <br>
+  ![get-product-by-id](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/get-product-by-id.jpg)
 
-Create new product: <br>
-![create-new-product](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/create-new-product.jpg)
+  Create new product: <br>
+  ![create-new-product](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/create-new-product.jpg)
 
-Update product by id: <br>
-![update-product-by-id](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/update-product-by-id.jpg)
+  Update product by id: <br>
+  ![update-product-by-id](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/update-product-by-id.jpg)
 
-Delete product by id: <br>
-![delete-product-by-id](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/delete-product-by-id.jpg)
+  Delete product by id: <br>
+  ![delete-product-by-id](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/delete-product-by-id.jpg)
 
 - Orders: <br>
-Get all orders: <br>
-![get-all-orders](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/get-all-orders.jpg)
+  Get all orders: <br>
+  ![get-all-orders](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/get-all-orders.jpg)
 
-Get orders by customer id: <br>
-![get-product-by-customer-id](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/get-product-by-customer-id.jpg)
+  Get orders by customer id: <br>
+  ![get-product-by-customer-id](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/get-product-by-customer-id.jpg)
