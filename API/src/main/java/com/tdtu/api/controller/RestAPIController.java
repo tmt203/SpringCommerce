@@ -47,14 +47,11 @@ public class RestAPIController {
         productService.save(null, productDto);
     }
 
-    @PutMapping("/products/{id}")
-    public ResponseEntity<?> updateProductById(
-            @RequestBody ProductDto productDto,
-            @RequestParam("productImage") MultipartFile productImage,
-            @PathVariable("id") Long id) {
+    @PutMapping("/products")
+    public ResponseEntity<?> updateProductById(@RequestBody ProductDto productDto) {
         try {
-            productService.findById(id);
-            productService.update(productImage, productDto);
+            productService.findById(productDto.getId());
+            productService.update(null, productDto);
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (NoSuchElementException e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -82,24 +79,5 @@ public class RestAPIController {
     @GetMapping("/orders/{id}")
     public List<OrderDto> getOrderByCustomerId(@PathVariable("id") Long id) {
         return orderService.findAllByCustomerId(id);
-    }
-
-    @PostMapping("/orders")
-    public void addOrder(@RequestBody OrderDto orderDto) {
-        orderDto.save();
-    }
-
-    @PutMapping("/products/{id}")
-    public ResponseEntity<?> updateProductById(
-            @RequestBody ProductDto productDto,
-            @RequestParam("productImage") MultipartFile productImage,
-            @PathVariable("id") Long id) {
-        try {
-            productService.findById(id);
-            productService.update(productImage, productDto);
-            return new ResponseEntity<>(HttpStatus.OK);
-        } catch (NoSuchElementException e) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
     }
 }
