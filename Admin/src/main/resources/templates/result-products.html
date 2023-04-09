@@ -72,8 +72,8 @@
                             <td>
                                 <!-- th:href="@{update-product/{id}(id=${product.id})}" -->
                                 <a th:href="@{'update-product/' + ${product.id}}" id="updateBtn" class="btn btn-primary">Edit</a>
-                                <a th:if="${product.isActivated == true}" th:href="@{'delete-product/' + ${product.id}}" class="btn btn-danger">Delete</a>
-                                <a th:if="${product.isActivated == false}" th:href="@{'enable-product/' + ${product.id}}" class="btn btn-success">Enable</a>
+                                <a th:if="${product.isActivated == true}" th:href="@{'/delete-product/' + ${product.id}}" class="btn btn-danger">Delete</a>
+                                <a th:if="${product.isActivated == false}" th:href="@{'/enable-product/' + ${product.id}}" class="btn btn-success">Enable</a>
                             </td>
                         </tr>
                     </table>

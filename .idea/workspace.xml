@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df292812-a472-4585-a0b2-ed3c39b615b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/error/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/error/500.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/templates/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/src/main/java/com/tdtu/admin/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/java/com/tdtu/admin/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/src/main/resources/templates/result-products.html" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/src/main/resources/templates/result-products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/tdtu/library/service/impl/ProductServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="19" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Customer/src/main/resources/static/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Customer/src/main/resources/templates" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -66,8 +67,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ACER\Desktop\CN Java\Midterm\ecommerce-springboot\Customer\src\main\resources\static\css" />
       <recent name="C:\Users\ACER\Desktop\CN Java\Midterm\ecommerce-springboot\Customer\src\main\resources\templates" />
+      <recent name="C:\Users\ACER\Desktop\CN Java\Midterm\ecommerce-springboot\Customer\src\main\resources\static\css" />
       <recent name="C:\Users\ACER\Desktop\CN Java\Midterm\ecommerce-springboot\Customer\src\main\resources\static\images" />
       <recent name="C:\Users\ACER\Desktop\CN Java\Midterm\ecommerce-springboot\Customer\src\main\resources\static" />
       <recent name="C:\Users\ACER\Desktop\CN Java\Midterm\ecommerce-springboot\Admin\src\main\resources\templates" />
@@ -85,7 +86,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AdminApplication">
+  <component name="RunManager" selected="Spring Boot.ApiApplication">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tdtu.App" />
       <module name="ecommerce-springboot" />
@@ -191,7 +192,7 @@
       <workItem from="1680783398006" duration="5234000" />
       <workItem from="1680823398686" duration="35749000" />
       <workItem from="1680920429999" duration="47634000" />
-      <workItem from="1681009627421" duration="20404000" />
+      <workItem from="1681009627421" duration="25271000" />
     </task>
     <servers />
   </component>

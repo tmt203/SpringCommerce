@@ -96,7 +96,7 @@ public class ProductServiceImpl implements ProductService {
                     product.setImage(Base64.getEncoder().encodeToString(productImage.getBytes()));
                 }
             }
-            product.setName(product.getName());
+            product.setName(productDto.getName());
             product.setPrice(productDto.getPrice());
             product.setBrand(productDto.getBrand());
             product.setCategory(productDto.getCategory());

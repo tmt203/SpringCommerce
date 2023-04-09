@@ -146,6 +146,6 @@ public class ProductController {
             e.printStackTrace();
             ra.addFlashAttribute("errorMessage", "Deleted product failed !");
         }
-        return "redirect:/products";
+        return "redirect:/products/0";
     }
 }
