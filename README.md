@@ -6,6 +6,8 @@
 - **Subject**: Thực hành Công nghệ Java - Nhóm 2 - Tổ 2
 - **Lecturer**: Võ Văn Thành
 
+(Link Youtube Project)[https://www.youtube.com/playlist?list=PLcysNhW6xq7VcN3idPE2nXCj6wPD051dw]
+
 ## Table of contents
 - [Architecture](#architecture)
 - [Code structure](#code-structure)
@@ -45,3 +47,4 @@ Update product by id: <br>
 
 Delete product by id: <br>
 ![delete-product-by-id](https://github.com/tmt203/SpringCommerce/blob/main/z-support%20data%2C%20images%2C%20etc/Postman%20Snapshots/delete-product-by-id.jpg)
+
