@@ -28,3 +28,5 @@ Software install requirements: Intellij IDEA (Recommend using Ultimate version),
 Here is steps to run Admin module (others module are same):<br>
 
 ![how-to-run](https://github.com/tmt203/SpringCommerce/blob/main/how-to-run.png)
+
+## Verify APIs 
